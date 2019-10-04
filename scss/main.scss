@@ -9,6 +9,80 @@
 @import "../bootstrap/scss/nav";
 @import "../bootstrap/scss/carousel";
 
+@font-face {
+  font-family: 'icomoon';
+ 
+ src:  url('../../font/icomoon.eot?1cmi1b');
+
+  src:  url('../../font/icomoon.eot?1cmi1b#iefix')
+ format('embedded-opentype'), url('../../font/icomoon.ttf?1cmi1b') format('truetype'), url('../../font/icomoon.woff?1cmi1b') format('woff'), url('../../font/icomoon.svg?1cmi1b#icomoon') format('svg');
+ 
+ font-weight: normal;
+  font-style: normal;
+
+  font-display: block;
+}
+
+[class^="icon-"],[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+ 
+ font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-instagram-logo:before {
+  content: "\e900";
+}
+
+.icon-facebook-logo:before {
+  content: "\e901";
+
+}
+
+.icon-dribbble-logo:before {
+  content: "\e902";
+}
+
+.icon-behance:before {
+  content: "\e903";
+}
+
+.icon-down:before {
+  content: "\e904";
+}
+
+.icon-dribbble:before {
+  content: "\e905";
+}
+
+.icon-facebook:before {
+  content: "\e906";
+}
+
+.icon-forrst:before {
+  content: "\e907";
+}
+
+.icon-google:before {
+  content: "\e908";
+}
+
+.icon-twitter-black-shape:before {
+  content: "\e909";
+}
+
+
 
 $green: #0eb493;
 @mixin title-line{
@@ -54,25 +128,18 @@ a:hover{
 
 .bd-example{
 	padding: 0;
-	height: 100vh;
+	height: auto;
 	/*background: url(../../img/header-bg.png);
 	background-size: cover;*/
 	position: relative;
-	@media screen and (max-width: 600px) {
-     height: auto;
+
   }
  
-	}//.header-bg
-
-
 	.carousel-caption{
 		line-height: 68px;
-
-		
 		h5{
 			font-size: 62px;
 			font-weight: 300;
-			
 			span{
 				display: inline-block;
 				font-weight: 600;
@@ -81,13 +148,16 @@ a:hover{
 		strong{
 			font-size: 48px;
 			font-weight: 300;
-			
 			span{
 				display: inline-block;
 				color: #0edc94;
 			}//span
 		}//strong
 		p{
+			font-size: 18px;
+		}
+		.line{
+			
 			font-size: 18px;
 			position: relative;
 			&:before{
@@ -96,8 +166,8 @@ a:hover{
 				width: 29px;
 				height: 1px;
 				background: #0edc94;
-				top: 35px;
-				right: 600px;
+				bottom: 50px;
+				right: 150px;
 			}//&:before
 			&:after{
 				content: "";
@@ -105,14 +175,31 @@ a:hover{
 				width: 29px;
 				height: 1px;
 				background: #0edc94;
-				top: 35px;
-				left: 600px;
-
+				bottom: 50px;
+				left: 150px;
 			}//&:before
-		}//p
+		}//line
 
 	}//carousel-caption
-	
+
+    .socials li {
+    	list-style-type: none;
+    	display: inline-block;
+    	font-size: 18px;
+    	opacity: .5;
+    	span{
+    		display: block;
+    	
+    	a{
+    		
+    		&:hover{
+    		opacity: 1;
+    	}
+    	}
+    	
+    	}
+    }
+
 	.header-top-wrapper{
 		background: rgba(5,12,28, 0.2);
 		/*margin-top: -1200px;*/
