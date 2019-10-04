@@ -4645,7 +4645,7 @@ a:hover {
   /*background: url(../../img/header-bg.png);
 	background-size: cover;*/
   position: relative; }
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 600px) {
     .bd-example {
       height: auto; } }
 
@@ -4708,6 +4708,9 @@ a:hover {
 .navbar-nav li {
   padding-left: 17px;
   padding-bottom: 1px; }
+  @media screen and (max-width: 800px) {
+    .navbar-nav li:hover {
+      background: red; } }
   .navbar-nav li a {
     color: #fff;
     padding-top: 22px;
@@ -4902,6 +4905,8 @@ a:hover {
   opacity: .5;
   transition: opacity .6s ease;
   border-radius: 50%;
-  border: 3px solid #fff; }
-  .carousel-indicators li .active {
-    background: #fff; }
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0); }
+
+.carousel-indicators li.active {
+  background: white; }

@@ -147,6 +147,11 @@ a:hover{
  	li{
  		padding-left: 17px;
  		padding-bottom: 1px;
+ 		&:hover{
+ 			@media screen and (max-width: 800px){
+ 				background: red;
+ 			}
+ 		}//&:hover
 
  		a{
  			color: #fff;
@@ -155,6 +160,7 @@ a:hover{
  			display: inline-block;
  			&:hover{
  				border-top: 1px solid #32b0ee;
+
 
  			}
  		}//a
@@ -376,7 +382,9 @@ a:hover{
     transition: opacity .6s ease;
     border-radius: 50%;
     border: 3px solid #fff;
-    	.active{
-    		background: #fff;
-    	}
+    background: rgba(0,0,0, 0);
+ 
+    }
+ .carousel-indicators li.active{
+    	background: rgba(255,255,255, 1);
     }
