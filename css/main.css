@@ -4873,7 +4873,8 @@ a:hover {
     top: -10px; }
 
 .features-wrapper {
-  padding-top: 10px; }
+  padding-top: 10px;
+  background: #f4f7f9; }
   .features-wrapper .mt37 {
     margin-top: 37px;
     padding-bottom: 34px; }
@@ -4884,17 +4885,18 @@ a:hover {
     .features-wrapper .mt37 p {
       color: #4d606e;
       line-height: 22px; }
-    .features-wrapper .mt37 .slid {
-      padding-top: 55px; }
-      .features-wrapper .mt37 .slid li {
-        list-style-type: none;
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        border: 1px solid rgba(6, 32, 51, 0.5); }
-        .features-wrapper .mt37 .slid li:first-child {
-          background: #062033; }
+
+.slid {
+  padding-top: 55px; }
+  .slid li {
+    list-style-type: none;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(6, 32, 51, 0.5); }
+    .slid li:first-child {
+      background: #062033; }
 
 .ico-brend {
   display: block;
@@ -4923,19 +4925,6 @@ a:hover {
   border-radius: 50%;
   border: 1px solid #0eb493; }
 
-.works {
-  padding-top: 33px; }
-
-.cont-main-text .main-text {
-  position: absolute;
-  bottom: 60px;
-  left: calc(50% - 312px);
-  width: 625px;
-  color: #fff; }
-  .cont-main-text .main-text strong {
-    font: normal 300 14px 'Open Sans', sans-serif;
-    display: block; }
-
 .title-line {
   padding-top: 67px;
   color: #0eb493;
@@ -4962,31 +4951,29 @@ a:hover {
       left: calc(50% - 25px);
       bottom: -43px; }
 
-.features-wrapper {
-  background: #f4f7f9; }
-
 .works-wrapper {
   background: #fff; }
   .works-wrapper h2:after {
     background: #fff url(../../img/ico-heart.png) no-repeat 50% 0; }
 
-.works p {
-  padding-top: 10px;
-  margin-bottom: 43px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  color: #384d5c; }
-
-.works a {
-  color: #062033;
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-weight: 700; }
-  .works a:hover {
-    background: #0eb493;
-    border-radius: 7px;
-    color: #fff; }
+.works {
+  padding-top: 33px; }
+  .works p {
+    padding-top: 10px;
+    margin-bottom: 43px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #384d5c; }
+  .works a {
+    color: #062033;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700; }
+    .works a:hover {
+      background: #0eb493;
+      border-radius: 7px;
+      color: #fff; }
 
 .img-box {
   max-width: 1600px;
@@ -5023,9 +5010,75 @@ a:hover {
     font-size: 14px; }
 
 .team {
-  background: #fff; }
+  background: #fff;
+  padding: 34px 0 100px 0; }
   .team h2:after {
     background: #fff url("../../img/ico-heart.png") no-repeat 50% 0; }
+  .team .team-p {
+    font-size: 18px;
+    font-weight: 600px;
+    color: #384d5c;
+    line-height: 25px;
+    padding-bottom: 90px; }
+  .team img {
+    padding-bottom: 21px; }
+  .team h5 {
+    font-size: 18px;
+    font-weight: 600px; }
+  .team h6 {
+    font-size: 13px;
+    color: #959a9f; }
+
+.sf {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  padding-bottom: 20px; }
+  .sf:hover .cart-bg {
+    display: flex !important; }
+  .sf:hover h5 {
+    color: #0eb493; }
+
+.cart-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  width: 270px;
+  height: 300px;
+  background: rgba(35, 184, 153, 0.9); }
+  .cart-bg .card-body {
+    height: 300px;
+    padding: 25px 15px 24px 15px; }
+    .cart-bg .card-body h5 {
+      font-size: 16px;
+      font-weight: 700px;
+      line-height: 23px;
+      color: #fff; }
+    .cart-bg .card-body p {
+      font-size: 16px;
+      color: #fff;
+      padding-bottom: 54px;
+      line-height: 23px; }
+    .cart-bg .card-body .card-socials {
+      padding-left: 47px;
+      padding-right: 47px; }
+      .cart-bg .card-body .card-socials li {
+        list-style-type: none;
+        font-size: 20px;
+        background: rgba(13, 124, 102, 0.8);
+        color: #fff;
+        width: 43px;
+        height: 43px;
+        position: relative;
+        margin-bottom: 24px !important; }
+        .cart-bg .card-body .card-socials li a {
+          position: absolute;
+          width: 32px;
+          height: 32px;
+          left: 0; }
 
 .facts-wrapper {
   padding: 0;
@@ -5127,3 +5180,21 @@ a:hover {
   @media screen and (max-width: 850px) {
     .carousel-caption {
       bottom: 15px; } }
+
+/*.cont-main-text{
+	
+.main-text{
+	position: absolute;
+	bottom: 60px;
+	left: calc(50% - 312px);
+	width: 625px;
+	color: #fff;
+	
+	h1{	
+	}
+	strong{
+		font: normal 300 14px 'Open Sans', sans-serif;	
+		display: block;
+	}//strong
+}//main-text
+}//cont-main-text*/
