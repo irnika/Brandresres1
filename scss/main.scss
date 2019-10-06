@@ -47,6 +47,10 @@
 
 .icon-facebook-logo:before {
   content: "\e901";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 
 }
 
@@ -64,6 +68,10 @@
 
 .icon-dribbble:before {
   content: "\e905";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .icon-facebook:before {
@@ -76,10 +84,18 @@
 
 .icon-google:before {
   content: "\e908";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .icon-twitter-black-shape:before {
   content: "\e909";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 
@@ -92,13 +108,15 @@ $green: #0eb493;
 		h2{
 			position: relative;
 			text-transform: uppercase;
+			font-size: 28px; 
+			font-weight: 800;
 			&:before{
 				content: '';
     			position: absolute;
 			    width: 230px;
 			    height: 1px;
 			    background: #dce1e5;
-			    bottom: -33px;
+			    bottom: -36px;
 			    left: calc(50% - 115px);
 			}//&:before
 			&:after{
@@ -108,7 +126,7 @@ $green: #0eb493;
 			    width: 50px;
 			    height: 15px;
 			    left: calc(50% - 25px);
-			    bottom: -40px;
+			    bottom: -43px;
 			}//&:after
 
 		}//h2
@@ -182,21 +200,62 @@ a:hover{
 
 	}//carousel-caption
 
+
+	.soc-align{
+		position: relative;
+	}
+
+	.socials{
+		position: absolute;
+		bottom: 8%;
+		left: calc(50% - 95px);
+		z-index: 99;
+		@media screen and (max-width: 1600px){
+			bottom: calc(15% + 50px);;
+		}
+			@media screen and (max-width: 1400px){
+			bottom: calc(25% + 50px);
+		} 
+			@media screen and (max-width: 1200px){
+			bottom: calc(35% + 50px);
+		} 
+			@media screen and (max-width: 1050px){
+			bottom: calc(45% + 50px);
+		}
+			@media screen and (max-width: 850px){
+			bottom: calc(50% + 50px);
+		} 
+			@media screen and (max-width: 750px){
+			display: none;
+		} 
+
+	}
+
+	.socials span{
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative; 
+    font-size: 18px;
+
+}
+
     .socials li {
     	list-style-type: none;
     	display: inline-block;
     	font-size: 18px;
-    	opacity: .5;
-    	span{
-    		display: block;
-    	
-    	a{
-    		
-    		&:hover{
+    	color: #fff;
+    	opacity: .2;
+    			&:hover{
     		opacity: 1;
     	}
-    	}
-    	
+
+    	a{
+    		position: absolute;
+            width: 32px;
+            height: 32px;
+             left:0;
+
     	}
     }
 
@@ -213,9 +272,10 @@ a:hover{
                 padding-left: 26px;
 			    border-left: 1px solid #154458;
 			    font-weight: 300;
-			   color: #546365 /*rgba(40,59,62, 0.9)*/;
+			     color: #546365 /*rgba(40,59,62, 0.9)*/;
 			    	font-size: 13px;
 			    	height-line: 15px; 
+			    	align-items: center;
 			}//tag-line-wrapper
 
         .logo-wrapper{
@@ -230,29 +290,39 @@ a:hover{
     }//.header-top-wrapper
 
 
+.navbar{
+padding: 0;
+}
  .navbar-nav{
+ 	padding-bottom: 15px;
  	li{
- 		padding-left: 17px;
- 		padding-bottom: 1px;
+ 		padding-left: 19px;
+ 		align-items: center !important;
+
  		&:hover{
  			@media screen and (max-width: 800px){
- 				background: red;
+ 				background: rgba(26,183,152, 0.2);
+
+ 				border-radius: 10px;
+ 				vertical-align: center;
  			}
  		}//&:hover
 
  		a{
  			color: #fff;
- 			padding-top: 22px;
+ 			padding-top: 35px;
  			border-top: 1px solid transparent;
  			display: inline-block;
+ 			font-size: 13px;
  			&:hover{
  				border-top: 1px solid #32b0ee;
-
-
+ 				@media screen and (max-width: 800px){
+ 					border-top: 1px solid transparent;
  			}
- 		}//a
- 	}//li
- }
+ 		}
+ 	}//a
+ }//li
+}
  .gb-menu{
  	background: rgba(26,183,152, 0.2);
  	
@@ -284,6 +354,75 @@ a:hover{
  	 }//&:after
 
  }//gb-align
+
+ .features-wrapper{
+ 	padding-top: 10px;
+ 	.mt37{
+ 		margin-top: 37px;
+ 		padding-bottom: 34px;
+ 	
+ 	h5{
+ 		font-size: 20px;
+ 		font-weight: 600;
+ 		margin-bottom: 26px;
+ 	}
+ 	p{
+ 		color: #4d606e;
+ 		line-height: 22px;
+ 	}
+ 	.slid{
+ 		padding-top: 55px;
+ 		li{
+ 			list-style-type: none;
+    	    display: inline-block;
+    	    width: 8px;
+    	    height: 8px;
+    	    border-radius: 50%;
+    	    border: 1px solid rgba(6,32,51, 0.5);
+    	    &:first-child{
+    	    	background: #062033;
+    	    }
+ 		}
+
+ 	}
+ 	}//.mt37
+
+ }//features-wrapper
+ .ico-brend{
+ 	display: block;
+    background: url('../../img/sprite.png') no-repeat -10px -11px;
+	width: 14px;
+	height: 20px;
+	padding: 20px;
+	border-radius: 50%;
+ 	border: 1px solid $green;
+
+ }
+ .ico-devel{
+ 	display: block;
+    background: url('../../img/sprite.png') no-repeat -54px -12px;
+	width: 14px;
+	height: 20px;
+	padding: 20px;
+	border-radius: 50%;
+ 	border: 1px solid $green;
+
+ }
+ .ico-consult{
+ 	display: block;
+    background: url('../../img/sprite.png') no-repeat -108px -15px;
+	width: 14px;
+	height: 20px;
+	padding: 20px;
+	border-radius: 50%;
+ 	border: 1px solid $green;
+
+ }
+
+.works{
+	padding-top: 33px;
+}
+
 .cont-main-text{
 	
 .main-text{
@@ -317,15 +456,30 @@ a:hover{
 	}
 }
 .works{
+	p{
+		padding-top: 10px;
+		margin-bottom: 43px;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 25px;
+		color: #384d5c;
+	}//p
+
 	
 	 a{
 			color: #062033;
+			margin-bottom: 30px;
+			font-size: 18px;
+			font-weight: 700;
 		&:hover{
-			background: #0eb493;	
-	}
-}
+			background: #0eb493;
+			border-radius: 7px;
+			color: #fff;	
+	}//&:hover
+}//a
 		
-}
+}//works
+
 .img-box{
 	max-width: 1600px;
 	background: #fff;
@@ -347,21 +501,38 @@ a:hover{
 
 .bg-hover{
 	display: none !important;
-	position: absolute;	
+	position: absolute;
 	top:0;
 	left:0;
 	color: #fff;
 	width: 400px;
 	height: 300px;
 	background: rgba(35,184,153, 0.9);
-	span, strong, p{
+	.sprite-img-hv{
 		display: block;
+		background: url('../../img/sprite.png') no-repeat -6px -81px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		margin-bottom: 30px;
 	}
+
+	 strong{
+	 	font-size: 18px;
+	 	font-weight: 700;
+	 	margin-bottom: 11px;
+	 }
+	 p{
+	 	font-size: 14px;
+	 }
+	
 }//.bg-hover 
+
 .team{
 	background: #fff;
 	h2:after{
-		background: #fff url(../../img/ico-heart.png) no-repeat 50% 0;
+		background: #fff url("../../img/ico-heart.png") no-repeat 50% 0;
 	}
 }
 .facts-wrapper{
@@ -453,8 +624,8 @@ a:hover{
 .carousel-indicators li {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     
     margin-right: 30px;
     margin-left: auto;
@@ -462,16 +633,26 @@ a:hover{
     cursor: pointer;
     background-clip: padding-box;
     margin-bottom: 5px;
-
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
     opacity: .5;
     transition: opacity .6s ease;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     background: rgba(0,0,0, 0);
  
     }
  .carousel-indicators li.active{
     	background: rgba(255,255,255, 1);
+    }
+
+    .carousel-caption{
+    	bottom: 160px;
+    		@media screen and (max-width: 1050px){
+			bottom: 90px;
+		} 
+		   	@media screen and (max-width: 900px){
+			bottom: 35px;
+		} 
+		  	@media screen and (max-width: 850px){
+			bottom: 15px;
+		} 
     }
