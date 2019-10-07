@@ -526,9 +526,14 @@ padding: 0;
 		line-height: 25px;
 		padding-bottom: 90px;
 	}
+	span{
+		display: block;
 	img{
 		padding-bottom: 21px;
+		margin-left: auto;
+		margin-right: auto;
 	}
+}
 	h5{
 		font-size: 18px;
 		font-weight: 600px;
@@ -614,6 +619,7 @@ padding: 0;
 	background-image: url(../../img/bg-fact.jpg);
 	background-size: cover;
 	.facts-bg-wrapper{
+		padding-top: 35px;
         height: 600px;
 	    background: rgba(11,32,49, 0.8); 
 	    background-size: cover;
@@ -624,8 +630,44 @@ padding: 0;
 }
 .facts{
 	color: #fff;
-	
+	.ico-watch{
+		display: block;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		border: 2px solid rgba(117,127,136, 0.8);
+		background: url('../../img/sprite.png') no-repeat -366px 32px;
+		 }
+	.ico-piple{
+		display: block;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		border: 2px solid rgba(117,127,136, 0.8);
+		background: url('../../img/sprite.png') no-repeat -320px -80px;
+		 }
+	.ico-rocket{
+		display: block;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		border: 2px solid rgba(117,127,136, 0.8);
+		background: url('../../img/sprite.png') no-repeat -203px 32px;
+		 }
+	.ico-cup{
+		display: block;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		border: 2px solid rgba(117,127,136, 0.8);
+		background: url('../../img/sprite.png') no-repeat -188px -185px;
+		 }		 	 
+
 }
+
+
+
+
 .discuss{
 	h2:after{
 		background: #fff url(../../img/ico-heart.png) no-repeat 50% 0;
@@ -633,8 +675,8 @@ padding: 0;
 
 }
 .form-group{
-	width: 770px;
-	margin: 0;
+	
+	margin: 0 !important;
 	padding: 0;
 	.ri{
 		width: 375px;
@@ -649,11 +691,12 @@ padding: 0;
 	}
 }
 .rt{
-   width: 770px;
+   width: 100%;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 }
+
 .button{
 	border: none;
 	background: #fff;

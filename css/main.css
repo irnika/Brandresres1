@@ -5020,8 +5020,12 @@ a:hover {
     color: #384d5c;
     line-height: 25px;
     padding-bottom: 90px; }
-  .team img {
-    padding-bottom: 21px; }
+  .team span {
+    display: block; }
+    .team span img {
+      padding-bottom: 21px;
+      margin-left: auto;
+      margin-right: auto; }
   .team h5 {
     font-size: 18px;
     font-weight: 600px; }
@@ -5086,6 +5090,7 @@ a:hover {
   background-image: url(../../img/bg-fact.jpg);
   background-size: cover; }
   .facts-wrapper .facts-bg-wrapper {
+    padding-top: 35px;
     height: 600px;
     background: rgba(11, 32, 49, 0.8);
     background-size: cover; }
@@ -5094,13 +5099,40 @@ a:hover {
 
 .facts {
   color: #fff; }
+  .facts .ico-watch {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid rgba(117, 127, 136, 0.8);
+    background: url("../../img/sprite.png") no-repeat -366px 32px; }
+  .facts .ico-piple {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid rgba(117, 127, 136, 0.8);
+    background: url("../../img/sprite.png") no-repeat -320px -80px; }
+  .facts .ico-rocket {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid rgba(117, 127, 136, 0.8);
+    background: url("../../img/sprite.png") no-repeat -203px 32px; }
+  .facts .ico-cup {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid rgba(117, 127, 136, 0.8);
+    background: url("../../img/sprite.png") no-repeat -188px -185px; }
 
 .discuss h2:after {
   background: #fff url(../../img/ico-heart.png) no-repeat 50% 0; }
 
 .form-group {
-  width: 770px;
-  margin: 0;
+  margin: 0 !important;
   padding: 0; }
   .form-group .ri {
     width: 375px;
@@ -5111,7 +5143,7 @@ a:hover {
       margin-right: 30px; }
 
 .rt {
-  width: 770px;
+  width: 100%;
   border-top: none;
   border-left: none;
   border-right: none; }
