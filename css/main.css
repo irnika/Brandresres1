@@ -5098,7 +5098,22 @@ a:hover {
       background: #122436 url(../../img/ico-heart1.png) no-repeat 50% 0; }
 
 .facts {
-  color: #fff; }
+  color: #fff;
+  padding-right: 60px;
+  padding-left: 60px; }
+  .facts .pb {
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto; }
+  .facts h5 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 19px; }
+  .facts p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8); }
   .facts .ico-watch {
     display: block;
     width: 130px;
@@ -5128,8 +5143,10 @@ a:hover {
     border: 2px solid rgba(117, 127, 136, 0.8);
     background: url("../../img/sprite.png") no-repeat -188px -185px; }
 
-.discuss h2:after {
-  background: #fff url(../../img/ico-heart.png) no-repeat 50% 0; }
+.discuss {
+  padding-top: 35px; }
+  .discuss h2:after {
+    background: #fff url(../../img/ico-heart.png) no-repeat 50% 0; }
 
 .form-group {
   margin: 0 !important;

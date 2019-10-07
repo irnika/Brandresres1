@@ -630,6 +630,27 @@ padding: 0;
 }
 .facts{
 	color: #fff;
+	padding-right: 60px;
+	padding-left: 60px;
+	.pb{
+	margin-bottom: 48px;
+	margin-right: auto;
+	margin-left: auto;
+    }
+    h5{
+    	font-size: 60px;
+    	font-weight: 700;
+    	line-height: 50px;
+    	margin-bottom: 19px;
+
+    }
+    p{
+    	font-size: 18px;
+    	text-transform: uppercase;
+    	color: rgba(255,255,255, 0.8);
+    }
+
+
 	.ico-watch{
 		display: block;
 		width: 130px;
@@ -669,6 +690,7 @@ padding: 0;
 
 
 .discuss{
+	padding-top: 35px;
 	h2:after{
 		background: #fff url(../../img/ico-heart.png) no-repeat 50% 0;
 	}
