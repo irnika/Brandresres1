@@ -525,11 +525,14 @@ padding: 0;
 		color: #384d5c;
 		line-height: 25px;
 		padding-bottom: 90px;
+		
 	}
 	span{
 		display: block;
+
 	img{
 		padding-bottom: 21px;
+
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -694,29 +697,74 @@ padding: 0;
 	h2:after{
 		background: #fff url(../../img/ico-heart.png) no-repeat 50% 0;
 	}
-
-}
-.form-group{
-	
-	margin: 0 !important;
-	padding: 0;
-	.ri{
-		width: 375px;
-		border-top: none;
-		border-left: none;
-		border-right: none;
-
-	
-		&:first-child{
-			margin-right: 30px;
+	.dis{
+		padding-top: 18px;
+		padding-bottom: 70px;
+		font-size: 18px;
+		font-weight: 600;
+		color: #60707d;
+	}//dis
+	address{
+		span{
+			display: inline-block;
+			font-size: 22px;
+			line-height: 30px;
+			color: #062033;
+			margin-bottom: 37px;
+		}//span
+		p{
+			color: rgba(106,115,123, 0.8);
+			line-height: 12px;
+			margin-bottom: 12px;
 		}
+	}//address
+
+}//discuss
+form{
+	p{
+		font-size: 24px;
+		font-weight: 700;
+		color: #062033;
+
 	}
 }
-.rt{
-   width: 100%;
-	border-top: none;
-	border-left: none;
-	border-right: none;
+
+.form-group{
+	width: 40vw;
+	margin: 0 !important;
+	padding: 0;
+	@media screen and (max-width: 900px){
+		flex-direction: column;
+
+	}
+
+	.ri{
+		width: 48%;
+		@media screen and (max-width: 900px){
+			width: 100%;
+		}
+		
+		input{
+			width: 100%;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid rgba(204,204,204, 0.6);
+
+		}
+	}
+	}
+		.rt{
+			width: 100%;
+			textarea{
+				width: 100%;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid rgba(204,204,204, 0.6);
+			resize:none
+
+			}	
 }
 
 .button{
@@ -724,6 +772,14 @@ padding: 0;
 	background: #fff;
 	float: right;
 }
+.letter-but{
+	width: 23px;
+	height: 16px;
+	background: url('../../img/sprite.png') no-repeat -90px -100px;
+	float: right;
+	
+}
+
 .map-wrapper
 {
 	height: 216px;

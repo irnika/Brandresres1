@@ -5147,27 +5147,66 @@ a:hover {
   padding-top: 35px; }
   .discuss h2:after {
     background: #fff url(../../img/ico-heart.png) no-repeat 50% 0; }
+  .discuss .dis {
+    padding-top: 18px;
+    padding-bottom: 70px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #60707d; }
+  .discuss address span {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 30px;
+    color: #062033;
+    margin-bottom: 37px; }
+  .discuss address p {
+    color: rgba(106, 115, 123, 0.8);
+    line-height: 12px;
+    margin-bottom: 12px; }
+
+form p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #062033; }
 
 .form-group {
+  width: 40vw;
   margin: 0 !important;
   padding: 0; }
+  @media screen and (max-width: 900px) {
+    .form-group {
+      flex-direction: column; } }
   .form-group .ri {
-    width: 375px;
-    border-top: none;
-    border-left: none;
-    border-right: none; }
-    .form-group .ri:first-child {
-      margin-right: 30px; }
+    width: 48%; }
+    @media screen and (max-width: 900px) {
+      .form-group .ri {
+        width: 100%; } }
+    .form-group .ri input {
+      width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.6); }
 
 .rt {
-  width: 100%;
-  border-top: none;
-  border-left: none;
-  border-right: none; }
+  width: 100%; }
+  .rt textarea {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.6);
+    resize: none; }
 
 .button {
   border: none;
   background: #fff;
+  float: right; }
+
+.letter-but {
+  width: 23px;
+  height: 16px;
+  background: url("../../img/sprite.png") no-repeat -90px -100px;
   float: right; }
 
 .map-wrapper {
