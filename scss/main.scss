@@ -56,6 +56,7 @@
 
 .icon-dribbble-logo:before {
   content: "\e902";
+
 }
 
 .icon-behance:before {
@@ -136,6 +137,7 @@ body{
 	font: 400 13px/15px 'Open Sans', sans-serif;
 	
 }
+
 a{
 	display: block;
 	text-decoration: none;
@@ -211,7 +213,7 @@ a:hover{
 		left: calc(50% - 95px);
 		z-index: 99;
 		@media screen and (max-width: 1600px){
-			bottom: calc(15% + 50px);;
+			bottom: calc(15% + 50px);
 		}
 			@media screen and (max-width: 1400px){
 			bottom: calc(25% + 50px);
@@ -698,13 +700,73 @@ padding: 0;
 		background: #fff url(../../img/ico-heart.png) no-repeat 50% 0;
 	}
 	.dis{
-		padding-top: 18px;
-		padding-bottom: 70px;
+		padding-top: 9px;
+		padding-bottom: 60px;
 		font-size: 18px;
 		font-weight: 600;
 		color: #60707d;
 	}//dis
+	.social-dis{
+		color: rgba(6,32,51, 0.2);
+		font-size: 25px;
+		font-weight: 700;
+
+		.icon-behance:before{
+				display: block;
+				content: "\e903";
+				width: 32px;
+				height: 32px;
+				position: absolute;	
+				top: 5px;
+				left: 5px; 	
+		}
+		.icon-twitter-black-shape{
+				content: "\e909";
+				display: block;
+				width: 32px;
+				height: 32px;
+				position: absolute;	
+		}
+		.icon-dribbble{
+				content: "\e905";
+				display: block;
+				width: 32px;
+				height: 32px;
+				position: absolute;	
+		}
+		.icon-forrst{
+				content: "\e907";
+				display: block;
+				width: 32px;
+				height: 32px;
+				top: 5px;
+				left: 5px;
+				position: absolute;	 
+		}
+		.icon-google{
+			content: "\e908";
+			display: block;
+				width: 32px;
+				height: 32px;
+				position: absolute;	
+
+		}
+
+
+	}
+
+}
+
+	.discuss-content{
+		padding-bottom: 109px;
+
 	address{
+		@media screen and (max-width: 1200px){
+			text-align: center;	
+			padding-bottom: 35px;
+			border-bottom: 1px solid rgba(106,115,123, 0.8);
+		}
+
 		span{
 			display: inline-block;
 			font-size: 22px;
@@ -713,24 +775,60 @@ padding: 0;
 			margin-bottom: 37px;
 		}//span
 		p{
+			@media screen and (max-width: 1200px){
+				font-size: 16px;
+			}
 			color: rgba(106,115,123, 0.8);
 			line-height: 12px;
 			margin-bottom: 12px;
 		}
+
 	}//address
 
-}//discuss
 form{
+	@media screen and (max-width: 1200px){
+				padding-bottom: 40px;
+				border-bottom: 1px solid rgba(106,115,123, 0.8);
+			}
+	
+	padding-top: 9px;
 	p{
+		@media screen and (max-width: 1200px){
+				text-align: center;
+			}
 		font-size: 24px;
 		font-weight: 700;
 		color: #062033;
+		margin-bottom: 37px;
+	}
+}
+}
+.social-dis{
+	padding-top: 10px;
+	ul{
+		@media screen and (max-width: 1200px){
+				flex-direction: row !important;
+				justify-content: space-between;
+				padding-left: 90px;
+				padding-right: 90px;
+				padding-top: 35px;
+				
+			}
+ li{
+   	margin-top: 5px;
+   	margin-bottom: 8px;
+	list-style-type: none;
+	position: relative;
+	
+	width: 32px;
+	height: 32px;
 
 	}
 }
+}
 
 .form-group{
-	width: 40vw;
+	width: 100%;
 	margin: 0 !important;
 	padding: 0;
 	@media screen and (max-width: 900px){
@@ -746,6 +844,7 @@ form{
 		
 		input{
 			width: 100%;
+			padding-bottom: 20px;
 			border-top: none;
 			border-left: none;
 			border-right: none;
@@ -753,11 +852,14 @@ form{
 
 		}
 	}
+	
 	}
 		.rt{
 			width: 100%;
+			margin-top: 27px;
 			textarea{
 				width: 100%;
+				margin-bottom: 40px;
 			border-top: none;
 			border-left: none;
 			border-right: none;
@@ -771,6 +873,7 @@ form{
 	border: none;
 	background: #fff;
 	float: right;
+	font-size: 16px;
 }
 .letter-but{
 	width: 23px;
@@ -791,14 +894,42 @@ form{
 .footer-wrapper{
 	background-color: #1ea78d;
 	color: #fff;
-	.logo{
-        display: block;
-		background: url(../../img/logo.png) no-repeat;
-		height: 30px;
-		width: 90px;	
-         }//.logo
+	.footer-content{
+		padding-top: 98px;
+		padding-bottom: 125px;
+			.logo{
+        		display: block;
+				background: url(../../img/logo.png) no-repeat;
+				height: 30px;
+				width: 90px;
+				margin-bottom: 25px;	
+         	}//.logo
+         	p{
+         		line-height: 25px;
+         	}
+         	.sub{
+         		display: inline-block;
+         		font-size: 14px;
+         		font-weight: 600px;
+         		color: rgba(232,239,235, 0.9);
+         		margin-bottom: 45px;
+         	}
+         	input{
+         		width: 270px;
+         		height: 50px;
+         		border: 2px solid #fff;
+         		background: #1ea78d;
+         		border-radius: 2px;
+         		margin-bottom: 20px;
+         	}
+    }
 	
 }//footer-wrapper
+
+
+
+
+
 .carousel-indicators{
 	width: 100%;
     position: absolute;
@@ -850,20 +981,3 @@ form{
 			bottom: 15px;
 		} 
     }
-/*.cont-main-text{
-	
-.main-text{
-	position: absolute;
-	bottom: 60px;
-	left: calc(50% - 312px);
-	width: 625px;
-	color: #fff;
-	
-	h1{	
-	}
-	strong{
-		font: normal 300 14px 'Open Sans', sans-serif;	
-		display: block;
-	}//strong
-}//main-text
-}//cont-main-text*/

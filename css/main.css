@@ -5148,29 +5148,104 @@ a:hover {
   .discuss h2:after {
     background: #fff url(../../img/ico-heart.png) no-repeat 50% 0; }
   .discuss .dis {
-    padding-top: 18px;
-    padding-bottom: 70px;
+    padding-top: 9px;
+    padding-bottom: 60px;
     font-size: 18px;
     font-weight: 600;
     color: #60707d; }
-  .discuss address span {
+  .discuss .social-dis {
+    color: rgba(6, 32, 51, 0.2);
+    font-size: 25px;
+    font-weight: 700; }
+    .discuss .social-dis .icon-behance:before {
+      display: block;
+      content: "\e903";
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 5px;
+      left: 5px; }
+    .discuss .social-dis .icon-twitter-black-shape {
+      content: "\e909";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute; }
+    .discuss .social-dis .icon-dribbble {
+      content: "\e905";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute; }
+    .discuss .social-dis .icon-forrst {
+      content: "\e907";
+      display: block;
+      width: 32px;
+      height: 32px;
+      top: 5px;
+      left: 5px;
+      position: absolute; }
+    .discuss .social-dis .icon-google {
+      content: "\e908";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute; }
+
+.discuss-content {
+  padding-bottom: 109px; }
+  @media screen and (max-width: 1200px) {
+    .discuss-content address {
+      text-align: center;
+      padding-bottom: 35px;
+      border-bottom: 1px solid rgba(106, 115, 123, 0.8); } }
+  .discuss-content address span {
     display: inline-block;
     font-size: 22px;
     line-height: 30px;
     color: #062033;
     margin-bottom: 37px; }
-  .discuss address p {
+  .discuss-content address p {
     color: rgba(106, 115, 123, 0.8);
     line-height: 12px;
     margin-bottom: 12px; }
+    @media screen and (max-width: 1200px) {
+      .discuss-content address p {
+        font-size: 16px; } }
+  .discuss-content form {
+    padding-top: 9px; }
+    @media screen and (max-width: 1200px) {
+      .discuss-content form {
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(106, 115, 123, 0.8); } }
+    .discuss-content form p {
+      font-size: 24px;
+      font-weight: 700;
+      color: #062033;
+      margin-bottom: 37px; }
+      @media screen and (max-width: 1200px) {
+        .discuss-content form p {
+          text-align: center; } }
 
-form p {
-  font-size: 24px;
-  font-weight: 700;
-  color: #062033; }
+.social-dis {
+  padding-top: 10px; }
+  @media screen and (max-width: 1200px) {
+    .social-dis ul {
+      flex-direction: row !important;
+      justify-content: space-between;
+      padding-left: 90px;
+      padding-right: 90px;
+      padding-top: 35px; } }
+  .social-dis ul li {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    list-style-type: none;
+    position: relative;
+    width: 32px;
+    height: 32px; }
 
 .form-group {
-  width: 40vw;
+  width: 100%;
   margin: 0 !important;
   padding: 0; }
   @media screen and (max-width: 900px) {
@@ -5183,15 +5258,18 @@ form p {
         width: 100%; } }
     .form-group .ri input {
       width: 100%;
+      padding-bottom: 20px;
       border-top: none;
       border-left: none;
       border-right: none;
       border-bottom: 1px solid rgba(204, 204, 204, 0.6); }
 
 .rt {
-  width: 100%; }
+  width: 100%;
+  margin-top: 27px; }
   .rt textarea {
     width: 100%;
+    margin-bottom: 40px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -5201,7 +5279,8 @@ form p {
 .button {
   border: none;
   background: #fff;
-  float: right; }
+  float: right;
+  font-size: 16px; }
 
 .letter-but {
   width: 23px;
@@ -5218,11 +5297,30 @@ form p {
 .footer-wrapper {
   background-color: #1ea78d;
   color: #fff; }
-  .footer-wrapper .logo {
-    display: block;
-    background: url(../../img/logo.png) no-repeat;
-    height: 30px;
-    width: 90px; }
+  .footer-wrapper .footer-content {
+    padding-top: 98px;
+    padding-bottom: 125px; }
+    .footer-wrapper .footer-content .logo {
+      display: block;
+      background: url(../../img/logo.png) no-repeat;
+      height: 30px;
+      width: 90px;
+      margin-bottom: 25px; }
+    .footer-wrapper .footer-content p {
+      line-height: 25px; }
+    .footer-wrapper .footer-content .sub {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600px;
+      color: rgba(232, 239, 235, 0.9);
+      margin-bottom: 45px; }
+    .footer-wrapper .footer-content input {
+      width: 270px;
+      height: 50px;
+      border: 2px solid #fff;
+      background: #1ea78d;
+      border-radius: 2px;
+      margin-bottom: 20px; }
 
 .carousel-indicators {
   width: 100%;
@@ -5268,21 +5366,3 @@ form p {
   @media screen and (max-width: 850px) {
     .carousel-caption {
       bottom: 15px; } }
-
-/*.cont-main-text{
-	
-.main-text{
-	position: absolute;
-	bottom: 60px;
-	left: calc(50% - 312px);
-	width: 625px;
-	color: #fff;
-	
-	h1{	
-	}
-	strong{
-		font: normal 300 14px 'Open Sans', sans-serif;	
-		display: block;
-	}//strong
-}//main-text
-}//cont-main-text*/
