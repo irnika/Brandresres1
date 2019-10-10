@@ -4654,13 +4654,12 @@ input[type="button"].btn-block {
 .icon-arrow-thin-right:before {
   content: "\e90a";
   position: absolute;
-  top: 80px;
-  right: 20px;
+  top: 75px;
+  right: 30px;
   color: rgba(255, 255, 255, 0.2); }
   @media screen and (max-width: 1200px) {
     .icon-arrow-thin-right:before {
-      top: 75px;
-      right: 14%; } }
+      display: none; } }
 
 .icon-instagram-logo:before {
   content: "\e900"; }
@@ -4726,21 +4725,26 @@ a:hover {
   position: relative; }
 
 .carousel-caption {
-  line-height: 68px; }
+  bottom: 180px !important; }
   .carousel-caption h5 {
     font-size: 62px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 58px; }
     .carousel-caption h5 span {
       display: inline-block;
       font-weight: 600; }
   .carousel-caption strong {
     font-size: 48px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 58px;
+    display: inline-block;
+    margin-bottom: 14px; }
     .carousel-caption strong span {
       display: inline-block;
       color: #0edc94; }
   .carousel-caption p {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 32px; }
   .carousel-caption .line {
     font-size: 18px;
     position: relative; }
@@ -4750,7 +4754,7 @@ a:hover {
       width: 29px;
       height: 1px;
       background: #0edc94;
-      bottom: 50px;
+      bottom: 30px;
       right: 150px; }
     .carousel-caption .line:after {
       content: "";
@@ -4758,7 +4762,7 @@ a:hover {
       width: 29px;
       height: 1px;
       background: #0edc94;
-      bottom: 50px;
+      bottom: 30px;
       left: 150px; }
 
 .soc-align {
@@ -4800,7 +4804,7 @@ a:hover {
   display: inline-block;
   font-size: 18px;
   color: #fff;
-  opacity: .2; }
+  opacity: .3; }
   .socials li:hover {
     opacity: 1; }
   .socials li a {
@@ -4898,6 +4902,17 @@ a:hover {
       color: #4d606e;
       line-height: 22px; }
 
+@media screen and (max-width: 1200px) {
+  .features-resp {
+    padding-left: 10px;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 1200px) {
+  .features-resp h5 {
+    text-align: center;
+    margin-top: 25px; } }
+
 .slid {
   padding-top: 55px; }
   .slid li {
@@ -4980,7 +4995,7 @@ a:hover {
   .works a {
     color: #062033;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700; }
     .works a:hover {
       background: #0eb493;
@@ -5046,21 +5061,23 @@ a:hover {
     color: #959a9f; }
 
 .sf {
-  display: block;
-  position: relative;
+  display: flex;
   padding-left: 0;
   padding-bottom: 20px; }
+  @media screen and (max-width: 1200px) {
+    .sf {
+      justify-content: center; } }
   .sf:hover .cart-bg {
     display: flex !important; }
   .sf:hover h5 {
     color: #0eb493; }
+  .sf .wrapper-cart {
+    width: 270px; }
 
 .cart-bg {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   color: #fff;
   width: 270px;
   height: 300px;
@@ -5117,15 +5134,25 @@ a:hover {
     margin-bottom: 48px;
     margin-right: auto;
     margin-left: auto; }
+    @media screen and (max-width: 1200px) {
+      .facts .pb {
+        margin-bottom: 5px; } }
   .facts h5 {
     font-size: 60px;
     font-weight: 700;
     line-height: 50px;
     margin-bottom: 19px; }
+    @media screen and (max-width: 1200px) {
+      .facts h5 {
+        font-size: 30px;
+        line-height: 25px; } }
   .facts p {
     font-size: 18px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.8); }
+    @media screen and (max-width: 1200px) {
+      .facts p {
+        font-size: 16px; } }
   .facts .ico-watch {
     display: block;
     width: 130px;
@@ -5255,6 +5282,10 @@ a:hover {
     position: relative;
     width: 32px;
     height: 32px; }
+    .social-dis ul li a {
+      display: block;
+      width: 32px;
+      height: 32px; }
 
 .form-group {
   width: 100%;
@@ -5333,7 +5364,7 @@ a:hover {
           font-weight: 300;
           line-height: 35px;
           padding-bottom: 40px;
-          border-bottom: 1px solid #fff; } }
+          border-bottom: 1px solid rgba(250, 250, 250, 0.6); } }
     .footer-wrapper .footer-content .sub {
       display: inline-block;
       font-size: 14px;
@@ -5362,17 +5393,26 @@ a:hover {
           margin-right: auto; } }
     .footer-wrapper .footer-content .foot-list {
       list-style-type: none; }
+      @media screen and (max-width: 1200px) {
+        .footer-wrapper .footer-content .foot-list {
+          font-size: 15px; } }
       .footer-wrapper .footer-content .foot-list li {
         margin-bottom: 16px; }
+  @media screen and (max-width: 1200px) {
+    .footer-wrapper .list-wr {
+      padding-bottom: 35px;
+      border-bottom: 1px solid rgba(250, 250, 250, 0.6); } }
   .footer-wrapper .wrapper-foot-list {
     margin-left: 0px;
     margin-right: 40px; }
+    @media screen and (max-width: 1200px) {
+      .footer-wrapper .wrapper-foot-list {
+        margin-left: 50px;
+        margin-right: 50px; } }
 
 .copy {
   padding-top: 48px;
   padding-left: 20px; }
-  .copy p {
-    margin-bottom: 0px; }
 
 .heart-text {
   display: inline-block;
@@ -5387,6 +5427,9 @@ a:hover {
     height: 17px;
     top: 7px;
     left: 5px; }
+    @media screen and (max-width: 1200px) {
+      .heart-text:after {
+        top: 12px; } }
 
 .pad-l {
   padding-left: 5px; }
@@ -5396,15 +5439,27 @@ a:hover {
 
 .pad-l15 {
   padding-left: 15px; }
+  @media screen and (max-width: 1200px) {
+    .pad-l15 {
+      display: block;
+      text-align: center; } }
 
 .black {
   color: #062033; }
 
 .l-b {
   margin-bottom: 53px; }
+  @media screen and (max-width: 1200px) {
+    .l-b {
+      border-bottom: 1px solid rgba(250, 250, 250, 0.6); } }
   .l-b p {
     padding-left: 13px;
     border-left: 1px solid rgba(6, 32, 51, 0.2); }
+    @media screen and (max-width: 1200px) {
+      .l-b p {
+        border: none;
+        border-bottom: none !important;
+        text-align: center; } }
 
 .carousel-indicators {
   width: 100%;
