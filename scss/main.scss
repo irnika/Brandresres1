@@ -38,9 +38,9 @@
  font-family: 'icomoon' !important;
  
  speak: none;
-  font-style: normal;
+ font-style: normal;
 
-  font-weight: normal;
+ font-weight: normal;
  
  font-variant: normal;
  
@@ -77,10 +77,10 @@ line-height: 1;
 
 .icon-facebook-logo:before {
   content: "\e901";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 
 }
 
@@ -99,10 +99,10 @@ line-height: 1;
 
 .icon-dribbble:before {
   content: "\e905";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
 }
 
 .icon-facebook:before {
@@ -115,18 +115,18 @@ line-height: 1;
 
 .icon-google:before {
   content: "\e908";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
 }
 
 .icon-twitter-black-shape:before {
   content: "\e909";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
 }
 
 
@@ -164,8 +164,7 @@ $green: #0eb493;
 	}//title-line
 
 body{
-	font: 400 13px/15px 'Open Sans', sans-serif;
-	
+	font: 400 13px/15px 'Open Sans', sans-serif;	
 }
 
 a{
@@ -291,7 +290,7 @@ a:hover{
     		position: absolute;
             width: 32px;
             height: 32px;
-             left:0;
+            left:0;
 
     	}
     }
@@ -310,9 +309,9 @@ a:hover{
 			    border-left: 1px solid #154458;
 			    font-weight: 300;
 			     color: #546365 /*rgba(40,59,62, 0.9)*/;
-			    	font-size: 13px;
-			    	height-line: 15px; 
-			    	align-items: center;
+			    font-size: 13px;
+			    height-line: 15px; 
+			    align-items: center;
 			}//tag-line-wrapper
 
         .logo-wrapper{
@@ -396,14 +395,16 @@ padding: 0;
  .features-wrapper{
  	padding-top: 10px;
  	background: #f4f7f9;
+
  	.mt37{
  		margin-top: 37px;
  		padding-bottom: 34px;
+ 		padding-left: 10px;
  	
  	h5{
  		font-size: 20px;
  		font-weight: 600;
- 		margin-bottom: 26px;
+ 		margin-bottom: 25px;
  	}
  	p{
  		color: #4d606e;
@@ -493,14 +494,18 @@ padding: 0;
 }
 .works{
 	padding-top: 33px;
+
 	p{
-		padding-top: 10px;
-		margin-bottom: 43px;
+		padding-top: 5px;
+		margin-bottom: 47px;
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 25px;
 		color: #384d5c;
 	}//p
+	ul{
+		padding-left: 15px;
+		padding-bottom: 5px;
 
 	
 	 a{
@@ -514,7 +519,7 @@ padding: 0;
 			color: #fff;	
 	}//&:hover
 }//a
-		
+}		
 }//works
 
 .img-box{
@@ -578,6 +583,7 @@ padding: 0;
 		color: #384d5c;
 		line-height: 25px;
 		padding-bottom: 90px;
+		padding-top: 5px;
 		
 	}
 	span{
@@ -585,7 +591,6 @@ padding: 0;
 
 	img{
 		padding-bottom: 21px;
-
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -593,12 +598,20 @@ padding: 0;
 	h5{
 		font-size: 18px;
 		font-weight: 600px;
+		margin-bottom: 13px;
 	}
 	h6{
 		font-size: 13px;
+		font-weight: 400;
 		color: #959a9f;
 	}
 }//.team
+
+.time-align{
+	margin-left: 0;
+	margin-right: -28px;
+
+}
 .sf {
 	display: flex;
 	@media screen and (max-width: 1200px){
@@ -761,9 +774,6 @@ padding: 0;
 
 }
 
-
-
-
 .discuss{
 	padding-top: 35px;
 	h2:after{
@@ -831,6 +841,7 @@ padding: 0;
 		padding-bottom: 109px;
 
 	address{
+		padding-top: 5px;
 		@media screen and (max-width: 1200px){
 			text-align: center;	
 			padding-bottom: 35px;
@@ -842,7 +853,7 @@ padding: 0;
 			font-size: 22px;
 			line-height: 30px;
 			color: #062033;
-			margin-bottom: 37px;
+			margin-bottom: 39px;
 		}//span
 		p{
 			@media screen and (max-width: 1200px){
@@ -929,7 +940,7 @@ form{
 		}
 	}
 	
-	}
+}
 		.rt{
 			width: 100%;
 			margin-top: 27px;
@@ -1064,7 +1075,7 @@ form{
 }//footer-wrapper
 
 .copy{
-	padding-top: 48px;
+	padding-top: 50px;
 	padding-left: 20px;
 
 	}
@@ -1109,14 +1120,16 @@ form{
 }
 .l-b{
 	margin-bottom: 53px;
+	border-left: 1px solid rgba(6,32,51, 0.2);
 	@media screen and (max-width: 1200px){
+		border-left: none;
 		border-bottom: 1px solid rgba(250,250,250, 0.6);
 	}
 	p{
 	padding-left: 13px;
-	border-left: 1px solid rgba(6,32,51, 0.2);
+	margin-bottom: 0px;
 	@media screen and (max-width: 1200px){
-			border: none ;
+			border: none;
 			border-bottom: none !important;
 			text-align: center;
 			
